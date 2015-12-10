@@ -48,7 +48,7 @@ mixin lipsum(amount, type)
             - loremIpsum += lipsumArray[i] + " ";
         - }
         //- capitalize the first letter of the first word;
-        - loremIpsum = loremIpsum.charAt(0).toUpperCase() + loremIpsum.slice(1);
+        - loremIpsum = loremIpsum.charAt(0).toUpperCase() + loremIpsum.slice(1) + ".";
     //- output sentences;
     - } else if (type === "sentences") {
         //- we already created an array of random content, now we just need to grab X items from it;
