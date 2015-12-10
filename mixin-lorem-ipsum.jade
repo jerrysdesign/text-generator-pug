@@ -4,7 +4,8 @@
     lipsum(3, "words") > "maecenas accumsan aliquet"; always lowercase, no punctuation;
     lipsum(32, "characters") > "Cras pede libero, dapibus necp u";
     lipsum(2, "sentences") > "Nam quis nulla. Integer malesuada.";
-mixin lipsum(amount, type)
+//- period (boolean) is whether to append a period to a "words" or "character" string to simulate a sentence;
+mixin lipsum(amount, type, period)
     //- this array will be loremText (by sentences);
     - var loremArray = new Array();
     //- this string is cherry picked (by sentences) to build a random piece of content;
@@ -36,19 +37,25 @@ mixin lipsum(amount, type)
     - if (type === "characters") {
         //- we already created a random string of lorem ipsum, now we just need to grab X characters of it;
         - loremIpsum = lipsumText.substr(0, amount);
+        - if (period) {
+            - loremIpsum = loremIpsum.replace(/\s+$/, '') + ".";
+        - }
     //- output words
     - } else if (type === "words") {
         //- we have a random string of words, but we dont want punctuation;
         - lipsumText = lipsumText.toLowerCase();
         - lipsumText = lipsumText.split(".").join("");
-        - lipsumText = lipsumText.split(",").join("");
+        - lipsumText = lipsumText.replace(", ", " ");
         - lipsumArray = lipsumText.split(" ");
         //- now we have an array of words without punctuation, we can grab X number of words;
         - for (var i = 0; i < amount; i++) {
             - loremIpsum += lipsumArray[i] + " ";
         - }
-        //- capitalize the first letter of the first word;
-        - loremIpsum = loremIpsum.charAt(0).toUpperCase() + loremIpsum.slice(1) + ".";
+        //- capitalize the first letter of the first word and add a period at the end;
+        - loremIpsum = loremIpsum.charAt(0).toUpperCase() + loremIpsum.slice(1);
+        - if (period) {
+            - loremIpsum = loremIpsum.replace(/\s+$/, '') + ".";
+        - }
     //- output sentences;
     - } else if (type === "sentences") {
         //- we already created an array of random content, now we just need to grab X items from it;
