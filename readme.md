@@ -10,7 +10,7 @@ Forked from @Longfilename's [Lorem Ipsum Mixin](https://www.github.com)
 
 ## Usage
 
-`+lipsum(type, amount, formatted)`
+`+lipsum(amount, type, formatted)`
 
 **"type" is a string that defines why kind of content to get back:**
 
