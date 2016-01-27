@@ -1,6 +1,6 @@
 # Lorem Ipsum Mixin
 
-Forked from @longfilename's Lorem Ipsum Mixin
+Forked from @Longfilename's [Lorem Ipsum Mixin](https://www.github.com)
 
 ## What this Jade mixin does
 
