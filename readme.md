@@ -13,8 +13,11 @@ Forked from @Longfilename's [Lorem Ipsum Mixin](https://github.com/Longfilename/
 `+text-gen(amount, format, sentence)`
 
 @mixin text-gen
+
 @param {number} amount - number of 'types'
+
 @param {string} format - possible values: "characters", "words", "sentences"
+
 @param {boolean} sentence - format as a sentence when using "words" or "character" type
 
 ### Examples
