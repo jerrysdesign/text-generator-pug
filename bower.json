@@ -1,0 +1,24 @@
+{
+  "name": "text-generator-pug",
+  "homepage": "https://github.com/dewezlopez/text-generator-pug",
+  "authors": [
+    "Alex Dewez-Lopez <alexdewezlopez@gmail.com>"
+  ],
+  "description": "Generate placeholder text using a pug mixin",
+  "main": "text-generator",
+  "keywords": [
+    "pug",
+    "lorem",
+    "ipsum",
+    "generator",
+    "mixin"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,4 @@
+include generate-text
+//- Alias for backward compatibility
+mixin lipsum(amount, type, format)
+  +text-gen(amount, type, format)
