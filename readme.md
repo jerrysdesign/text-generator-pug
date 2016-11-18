@@ -25,6 +25,5 @@ Forked from @Longfilename's [Lorem Ipsum Mixin](https://github.com/Longfilename/
 - `+text-gen(3, "words")` > "Maecenas accumsan aliquet"
 - `+text-gen(32, "characters")` > "Cras pede libero dapibus necp u"
 - `+text-gen(2, "sentences")` > "Nam quis nulla. Integer malesuada."
-
 - `+text-gen(3, "words", true)` > "Maecenas accumsan, aliquet."
 - `+text-gen(32, "characters", true)` > "Cras pede, libero dapibus necp."
