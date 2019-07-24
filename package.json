@@ -1,0 +1,19 @@
+{
+  "name": "text-generator-pug",
+  "version": "1.0.0",
+  "description": "Forked from @Longfilename's [Lorem Ipsum Mixin](https://github.com/Longfilename/Lorem-Ipsum-Mixin)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerrysdesign/text-generator-pug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerrysdesign/text-generator-pug/issues"
+  },
+  "homepage": "https://github.com/jerrysdesign/text-generator-pug#readme"
+}
